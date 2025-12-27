@@ -21,3 +21,5 @@ terraform.workspace --> dev/prod
 
 roboshop-infra-dev
 roboshop-infra-prod
+
+Module --> Common code, helps in creating reusable, maintainable and scalabale infrastructure code.
