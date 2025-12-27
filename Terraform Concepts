@@ -1,0 +1,23 @@
+IaaC advantages
+Variables --> default, terraform.tfvars, command line, ENV variables
+Conditions --> expression ? "true" : "false"
+Loops --> count based loop, for each loop, dynamic block
+Data types --> number, boolean, string, list, map
+Functions --> in built functions merge, toset, length, etc.
+Data sources --> query the existing information in provider
+Outputs --> print the o/p information
+Provisioners --> Local exec and Remote exec
+Locals --> assign expressions/functions to a variable and use it wherever required
+state and remote state --> S3 with locking
+Multiple environments
+	tfvars
+	terraform workspaces
+	
+terraform workspace 
+terraform workspace create dev --> it will create a folder in s3 bucket env: -> dev folder
+terraform workspace select dev
+
+terraform.workspace --> dev/prod
+
+roboshop-infra-dev
+roboshop-infra-prod
