@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket  = "terraform-practice-daws84s"
-    key     = "provisioners_demo"
+    key     = "provisioners_demo" # NO two projects should have same key, it should be different as it will overwrite the contents
     region  = "us-east-1"
     encrypt = true
     #dynamodb_table = "terraform-remote-state"
