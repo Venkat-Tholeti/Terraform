@@ -9,7 +9,7 @@ data "aws_ami" "joindevops" {
     
     filter {
       name = "name" #HERE RIGHT SIDE NAME IS AWS AMI ATTRIBUTE NAME, #LEFT SIDE IS TERRAFORM FILTER ARGUMENT
-      values = [ "RHEL-9-DevOps-Practice" ]  # PROBLEM HERE IS WITH SAME NAME OTHE RPEOPLE ALSO CAN CREATE AMI'S , SO WE NEED TO USE MORE FILTERS
+      values = [ "Redhat-9-DevOps-Practice" ]  # PROBLEM HERE IS WITH SAME NAME OTHE RPEOPLE ALSO CAN CREATE AMI'S , SO WE NEED TO USE MORE FILTERS
     }
     
     filter {
