@@ -1,6 +1,17 @@
 
-resource "aws_security_group" "test" {
-      name = "test_group"
+resource "aws_instance" "Test" {
+   ami = "ami-0220d79f3f480ecf5"
+   instance_type = "t3.micro"
+   vpc_security_group_ids = [ aws_security_group.Test.id ]
+   
+   tags = {
+     Name = "Testing"
+     Project = "Terraform"
+   }
+}
+
+resource "aws_security_group" "Test" {
+      name = "Test_group"
       description = "Practice concept"
 
       ingress {
